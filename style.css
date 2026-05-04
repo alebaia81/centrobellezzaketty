@@ -77,14 +77,14 @@ nav {
 }
 
 .logo-img {
-    height: 173px;
+    height: 208px;
     width: auto;
     transition: all 0.3s ease;
     filter: brightness(0.15); /* Rende il logo scuro per contrastare col fondo chiaro */
 }
 
 header.scrolled .logo-img {
-    height: 120px;
+    height: 144px;
 }
 
 .nav-links {
@@ -420,7 +420,7 @@ section {
 /* Responsive */
 @media (max-width: 768px) {
     .logo-img {
-        height: 96px;
+        height: 115px;
     }
 
     .hero-content h1 {
