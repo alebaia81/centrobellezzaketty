@@ -71,9 +71,9 @@ document.querySelectorAll('section').forEach(section => {
 document.addEventListener('DOMContentLoaded', () => {
     const mapElement = document.getElementById('map');
     if (mapElement) {
-        // Coordinate per Via Cittadella 48, San Nazzaro (PC)
-        const lat = 45.0764;
-        const lng = 9.8985;
+        // Coordinate per P.zza IV Novembre, 6A, Caorso (PC)
+        const lat = 45.0485;
+        const lng = 9.8710;
         
         const map = L.map('map', {
             scrollWheelZoom: false // Evita lo zoom accidentale durante lo scroll della pagina
@@ -83,7 +83,7 @@ document.addEventListener('DOMContentLoaded', () => {
             attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
         }).addTo(map);
 
-        // Icona personalizzata color oro (come il brand Soave)
+        // Icona personalizzata color oro (come il brand Ketty)
         const goldIcon = L.icon({
             iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-gold.png',
             shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/images/marker-shadow.png',
@@ -94,7 +94,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
 
         L.marker([lat, lng], {icon: goldIcon}).addTo(map)
-            .bindPopup('<strong>Soave Estetica</strong><br>Via Cittadella 48, San Nazzaro (PC)')
+            .bindPopup('<strong>Ketty Centro di Bellezza</strong><br>Piazza IV Novembre, 6/A, 29012 Caorso PC')
             .openPopup();
     }
 });
@@ -113,7 +113,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const treatment = this.querySelector('select[name="treatment"]').value;
             
             // Numero di telefono fisso del centro (da sostituire con quello reale)
-            const phoneNumber = "390000000000"; 
+            const phoneNumber = "393534194037"; 
             
             // Costruisce il messaggio
             let message = `Salve, sono ${name}.\n`;

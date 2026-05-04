@@ -1,5 +1,5 @@
 :root {
-    /* Palette Estetica Soave */
+    /* Palette Ketty Centro di Bellezza */
     --color-bg: #FAF7F5;
     --color-bg-alt: #F0EBE6;
     --color-bg-dark: #B8AFA7; /* Taupe IG */
@@ -77,14 +77,14 @@ nav {
 }
 
 .logo-img {
-    height: 144px;
+    height: 173px;
     width: auto;
     transition: all 0.3s ease;
     filter: brightness(0.15); /* Rende il logo scuro per contrastare col fondo chiaro */
 }
 
 header.scrolled .logo-img {
-    height: 100px;
+    height: 120px;
 }
 
 .nav-links {
@@ -420,7 +420,7 @@ section {
 /* Responsive */
 @media (max-width: 768px) {
     .logo-img {
-        height: 80px;
+        height: 96px;
     }
 
     .hero-content h1 {
