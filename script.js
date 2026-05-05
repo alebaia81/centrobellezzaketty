@@ -120,12 +120,11 @@ document.addEventListener('DOMContentLoaded', () => {
             // Numero di telefono fisso del centro (da sostituire con quello reale)
             const phoneNumber = "393534194037"; 
             
-            // Costruisce il messaggio
-            let message = `Salve, sono ${name}.\n`;
-            message += `Vorrei ricevere maggiori informazioni riguardo al trattamento: *${treatment}*.\n`;
-            if(email) {
-                message += `La mia email per eventuali comunicazioni è: ${email}\n`;
-            }
+            // Costruisce il messaggio personalizzato
+            let message = `Ciao Ketty! `;
+            if(name) message += `Sono ${name}. `;
+            message += `Vorrei regalarmi un momento di relax. ✨\n\n`;
+            message += `È possibile fissare un appuntamento per *${treatment}* questa settimana? Fatemi sapere quando avete un buco libero. Grazie mille!`;
             
             // Codifica l'URL e redireziona a WhatsApp
             const waUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
