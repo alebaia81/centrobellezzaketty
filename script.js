@@ -40,8 +40,12 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 
         const target = document.querySelector(href);
         if (target) {
+            const headerOffset = 100;
+            const elementPosition = target.getBoundingClientRect().top;
+            const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
             window.scrollTo({
-                top: target.offsetTop - 80,
+                top: offsetPosition,
                 behavior: 'smooth'
             });
         }
