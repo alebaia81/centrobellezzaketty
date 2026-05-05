@@ -243,6 +243,10 @@ section {
     padding: var(--section-padding);
 }
 
+#recensioni {
+    scroll-margin-top: 100px;
+}
+
 .section-title {
     text-align: center;
     font-size: 2.5rem;
@@ -561,9 +565,19 @@ section {
     letter-spacing: 0.05em;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 992px) {
+    #recensioni {
+        padding-top: 4rem !important;
+    }
+
+    .reviews-carousel {
+        padding: 1rem 0;
+        -webkit-mask-image: none;
+        mask-image: none;
+    }
+
     .review-card {
-        width: 280px;
+        width: 290px;
         padding: 1.5rem;
     }
 }

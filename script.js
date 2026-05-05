@@ -61,6 +61,9 @@ const observer = new IntersectionObserver((entries) => {
 }, observerOptions);
 
 document.querySelectorAll('section').forEach(section => {
+    // Escludiamo la sezione recensioni dall'effetto fade-in perché ha già la sua animazione
+    if (section.id === 'recensioni') return;
+    
     section.style.opacity = '0';
     section.style.transform = 'translateY(20px)';
     section.style.transition = 'all 0.6s ease-out';
