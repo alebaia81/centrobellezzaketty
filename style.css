@@ -9,10 +9,11 @@
     --color-accent-light: #E8D4BF;
     --color-rosa: #DFC5BD; /* Rosa Antico */
     --color-rosa-deep: #C9A99E;
-    --color-white: #FFFFFF;
+    --color-white: #ffffff;
     
     /* Spacing */
-    --section-padding: 5rem 1.5rem;
+    --section-padding: 5rem 10%;
+    --reviews-gap: 2rem;
     --container-max-width: 1200px;
 }
 
@@ -510,7 +511,7 @@ section {
 
 .reviews-track {
     display: flex;
-    gap: 2rem;
+    gap: var(--reviews-gap);
     width: max-content;
     animation: scroll 40s linear infinite;
 }
@@ -521,7 +522,7 @@ section {
 
 @keyframes scroll {
     0% { transform: translateX(0); }
-    100% { transform: translateX(calc(-50% - 1rem)); }
+    100% { transform: translateX(calc(-50% - (var(--reviews-gap) / 2))); }
 }
 
 .review-card {
@@ -575,6 +576,10 @@ section {
         padding: 1rem 0;
         -webkit-mask-image: none;
         mask-image: none;
+    }
+
+    .reviews-track {
+        --reviews-gap: 1.5rem; /* Ridotto per mobile */
     }
 
     .review-card {

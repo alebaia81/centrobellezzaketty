@@ -12,11 +12,13 @@ window.addEventListener('scroll', () => {
 document.addEventListener('DOMContentLoaded', () => {
     const track = document.querySelector('.reviews-track');
     if (track) {
+        // Selezioniamo solo le card originali (non quelle già clonate se lo script dovesse ripartire)
         const cards = Array.from(track.children);
         
-        // Clone each card to create the infinite effect
+        // Cloniamo l'intero set per garantire il loop infinito senza buchi
         cards.forEach(card => {
             const clone = card.cloneNode(true);
+            clone.setAttribute('aria-hidden', 'true'); // Nascondiamo i cloni agli screen reader
             track.appendChild(clone);
         });
     }
