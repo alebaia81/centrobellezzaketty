@@ -602,43 +602,58 @@ section {
 .contact-form-section {
     max-width: 600px;
     margin: 0 auto;
-    padding: 3rem 2rem;
+    padding: 3.5rem 2.5rem;
     background: var(--color-white);
-    border-radius: 15px;
+    border-radius: 20px;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.06);
+    text-align: center;
+}
+
+.contact-form-section h2 {
+    color: var(--color-accent);
+    margin-bottom: 1rem;
+    font-size: 2.2rem;
+    font-family: 'Playfair Display', serif;
+}
+
+.contact-form-section p {
+    color: var(--color-text-muted);
+    margin-bottom: 2.5rem;
+    line-height: 1.6;
 }
 
 .wa-form .form-group {
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.2rem;
 }
 
 .form-control {
     width: 100%;
-    padding: 1.1rem 1.4rem;
-    border: 1px solid #e2e8f0;
+    padding: 1.2rem 1.5rem;
+    border: 1px solid #edf2f7;
     border-radius: 12px;
     font-family: 'Inter', sans-serif;
     font-size: 1rem;
-    color: var(--color-text);
-    background-color: #f8fafc;
-    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    color: #2d3748 !important; /* Forza colore antracite */
+    background-color: #f7fafc;
+    transition: all 0.3s ease;
+    -webkit-appearance: none;
 }
 
 .form-control:focus {
     outline: none;
     border-color: var(--color-accent);
     background-color: var(--color-white);
-    box-shadow: 0 0 0 4px rgba(212, 165, 116, 0.1);
+    box-shadow: 0 0 0 4px rgba(212, 165, 116, 0.15);
 }
 
 select.form-control {
     appearance: none;
-    color: #4a5568;
+    color: #2d3748 !important;
     background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2224%22%20height%3D%2224%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20stroke%3D%22%23D4A574%22%20stroke-width%3D%222%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%3Cpolyline%20points%3D%226%209%2012%2015%2018%209%22%3E%3C%2Fpolyline%3E%3C%2Fsvg%3E");
     background-repeat: no-repeat;
-    background-position: right 1rem center;
-    background-size: 1.2rem auto;
-    padding-right: 3rem;
-    cursor: pointer;
+    background-position: right 1.2rem center;
+    background-size: 1.1rem auto;
+    padding-right: 3.5rem;
 }
 
 select.form-control:invalid {
