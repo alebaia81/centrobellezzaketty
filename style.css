@@ -598,60 +598,108 @@ section {
     margin: 0 auto 4rem auto;
 }
 
-.form-group {
+/* --- Form Contatti Premium --- */
+.contact-form-section {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 3rem 2rem;
+    background: var(--color-white);
+    border-radius: 15px;
+}
+
+.wa-form .form-group {
     margin-bottom: 1.5rem;
 }
 
 .form-control {
     width: 100%;
-    padding: 1rem 1.5rem;
-    border: 1px solid rgba(0,0,0,0.1);
-    border-radius: 8px;
+    padding: 1.1rem 1.4rem;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
     font-family: 'Inter', sans-serif;
     font-size: 1rem;
-    transition: border-color 0.3s;
+    color: var(--color-text);
+    background-color: #f8fafc;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .form-control:focus {
     outline: none;
     border-color: var(--color-accent);
+    background-color: var(--color-white);
+    box-shadow: 0 0 0 4px rgba(212, 165, 116, 0.1);
 }
 
 select.form-control {
     appearance: none;
-    background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23D4A574%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E");
+    color: #4a5568;
+    background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2224%22%20height%3D%2224%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20stroke%3D%22%23D4A574%22%20stroke-width%3D%222%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%3Cpolyline%20points%3D%226%209%2012%2015%2018%209%22%3E%3C%2Fpolyline%3E%3C%2Fsvg%3E");
     background-repeat: no-repeat;
-    background-position: right 1rem top 50%;
-    background-size: 0.65rem auto;
+    background-position: right 1rem center;
+    background-size: 1.2rem auto;
+    padding-right: 3rem;
+    cursor: pointer;
 }
 
-/* Privacy Checkbox */
+select.form-control:invalid {
+    color: #a0aec0;
+}
+
+/* Privacy Checkbox Restyling */
 .privacy-checkbox-group {
     display: flex;
     align-items: flex-start;
     gap: 0.8rem;
-    margin: 1.5rem 0;
+    margin: 2rem 0;
+    padding: 0 0.5rem;
     text-align: left;
 }
 
 .privacy-checkbox-group input[type="checkbox"] {
-    margin-top: 0.2rem;
-    cursor: pointer;
+    width: 18px;
+    height: 18px;
+    margin-top: 0.15rem;
     accent-color: var(--color-accent);
-    width: 16px;
-    height: 16px;
+    cursor: pointer;
+    border-radius: 4px;
     flex-shrink: 0;
 }
 
 .privacy-checkbox-group label {
-    font-size: 0.75rem;
-    color: var(--color-text-muted);
-    line-height: 1.4;
+    font-size: 0.8rem;
+    color: #64748b;
+    line-height: 1.5;
     cursor: pointer;
-    opacity: 0.9;
+    opacity: 1;
 }
 
 .privacy-checkbox-group label a {
-    color: inherit;
+    color: var(--color-accent);
     text-decoration: underline;
+    font-weight: 500;
+}
+
+/* Button restyle */
+.wa-form .btn {
+    width: 100%;
+    padding: 1.2rem;
+    font-size: 1rem;
+    letter-spacing: 1.5px;
+    font-weight: 600;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 50px;
+    box-shadow: 0 10px 25px rgba(212, 165, 116, 0.25);
+    transition: all 0.3s ease;
+}
+
+.wa-form .btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 15px 30px rgba(212, 165, 116, 0.35);
+}
+
+@media (max-width: 576px) {
+    .contact-form-section {
+        padding: 2.5rem 1.5rem;
+    }
 }
