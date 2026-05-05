@@ -127,6 +127,7 @@ header.scrolled .logo-img {
     padding: 0;
     flex-shrink: 0;
     -webkit-appearance: none;
+    appearance: none;
 }
 
 .mobile-menu-toggle span {
@@ -432,15 +433,15 @@ section {
     }
 
     .logo-img {
-        height: 60px; /* Ridotto ulteriormente per evitare sovrapposizioni */
+        height: 100px; /* Riportato a una dimensione più leggibile */
     }
 
     header.scrolled .logo-img {
-        height: 50px;
+        height: 80px;
     }
 
     .hero {
-        padding-top: 100px; /* Spazio per l'header fisso */
+        padding-top: 140px; /* Aumentato per accomodare il logo più grande */
     }
 
     .hero-content h1 {
@@ -481,16 +482,16 @@ section {
     .hero {
         height: auto;
         min-height: 100vh;
-        padding-top: 80px;
+        padding-top: 100px;
         padding-bottom: 40px;
     }
     
     .logo-img {
-        height: 50px;
+        height: 70px;
     }
     
     header.scrolled .logo-img {
-        height: 40px;
+        height: 60px;
     }
 
     .hero-content h1 {
