@@ -112,6 +112,12 @@ document.addEventListener('DOMContentLoaded', () => {
         form.addEventListener('submit', function(e) {
             e.preventDefault(); // Evita il ricaricamento della pagina
             
+            // Validazione nativa dei campi (compresa la checkbox privacy)
+            if (!this.checkValidity()) {
+                this.reportValidity();
+                return;
+            }
+            
             // Recupera i valori dai campi
             const name = this.querySelector('input[name="name"]').value.trim();
             const treatment = this.querySelector('select[name="treatment"]').value;
