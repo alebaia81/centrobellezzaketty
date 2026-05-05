@@ -123,7 +123,7 @@ document.addEventListener('DOMContentLoaded', () => {
             // Costruisce il messaggio personalizzato
             let message = `Ciao Ketty! `;
             if(name) message += `Sono ${name}. `;
-            message += `Vorrei regalarmi un momento di relax. ✨\n\n`;
+            message += `Vorrei regalarmi un momento di relax! \n\n`;
             message += `È possibile fissare un appuntamento per *${treatment}* questa settimana? Fatemi sapere quando avete un buco libero. Grazie mille!`;
             
             // Codifica l'URL e redireziona a WhatsApp
