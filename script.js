@@ -114,7 +114,6 @@ document.addEventListener('DOMContentLoaded', () => {
             
             // Recupera i valori dai campi
             const name = this.querySelector('input[name="name"]').value.trim();
-            const email = this.querySelector('input[name="email"]').value.trim();
             const treatment = this.querySelector('select[name="treatment"]').value;
             
             // Numero di telefono fisso del centro (da sostituire con quello reale)
